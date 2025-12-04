@@ -25,16 +25,19 @@ The system aims to help users understand how disaster operations work by managin
 OOP Concepts Applied
 
 Abstraction
+
 The system uses abstract design principles to hide the complexity of specific modules.
  While the user interacts with simple menus, the deeper logic of request handling, file access, data structures, and emergency processing remains hidden inside classes.
 For example, each module (such as SupplyModule or PriorityModule) exposes only necessary methods like menu(), but keeps the detailed internal operations abstracted.
 
 Inheritance
+
 Several parts of the system follow the inheritance principle, using superclasses and subclasses to avoid repetition and enforce structure.
  Common structures such as emergency request data, evacuee information, and disaster safety information follow shared patterns that can be extended into specialized forms in the future.
 This enables the system to grow without rewriting features—new disaster modules, new request types, and future expansions can inherit base characteristics easily.
 
 Polymorphism
+
 Polymorphism is demonstrated through overridden behaviors, where different modules implement their methods uniquely while still being accessed through common interfaces.
 For example:
 Each disaster type displays its own version of safety tips through overridden methods.
@@ -46,6 +49,7 @@ Priority queue requests behave differently depending on their assigned priority 
 Method calls such as menu() behave dynamically depending on which module is accessed.
 
 Encapsulation
+
 All sensitive data fields—such as quantities of supplies, evacuee information, contact numbers, and emergency requests—are encapsulated using:
 Private fields
 
